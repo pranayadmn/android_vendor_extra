@@ -2,8 +2,6 @@
 ifneq ($(LINEAGE_BUILD),)
 ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-endif
-endif
 
 # ih8sn
 PRODUCT_COPY_FILES += \
@@ -11,6 +9,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     ih8sn
+endif
+endif
 
 # Signing
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
